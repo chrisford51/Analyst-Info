@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="hddb01DataSet1" targetNamespace="http://tempuri.org/hddb01DataSet1.xsd" xmlns:mstns="http://tempuri.org/hddb01DataSet1.xsd" xmlns="http://tempuri.org/hddb01DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="hddb01ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="hddb01ConnectionString (Settings)" PropertyReference="ApplicationSettings.Analyst_Info.Properties.Settings.GlobalReference.Default.hddb01ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StaffInfoTableAdapter" GeneratorDataComponentClassName="StaffInfoTableAdapter" Name="StaffInfo" UserDataComponentName="StaffInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hddb01ConnectionString (Settings)" DbObjectName="StaffInfo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [First Name], [Last Name], [Service 1], [Service 2], [Service 3], Team, [Phone Number], [Service 4], [Service 5], [Service 6] FROM StaffInfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="First Name" DataSetColumn="First Name" />
+              <Mapping SourceColumn="Last Name" DataSetColumn="Last Name" />
+              <Mapping SourceColumn="Service 1" DataSetColumn="Service 1" />
+              <Mapping SourceColumn="Service 2" DataSetColumn="Service 2" />
+              <Mapping SourceColumn="Service 3" DataSetColumn="Service 3" />
+              <Mapping SourceColumn="Team" DataSetColumn="Team" />
+              <Mapping SourceColumn="Phone Number" DataSetColumn="Phone Number" />
+              <Mapping SourceColumn="Service 4" DataSetColumn="Service 4" />
+              <Mapping SourceColumn="Service 5" DataSetColumn="Service 5" />
+              <Mapping SourceColumn="Service 6" DataSetColumn="Service 6" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="hddb01DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="hddb01DataSet1" msprop:Generator_UserDSName="hddb01DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StaffInfo" msprop:Generator_TableClassName="StaffInfoDataTable" msprop:Generator_TableVarName="tableStaffInfo" msprop:Generator_TablePropName="StaffInfo" msprop:Generator_RowDeletingName="StaffInfoRowDeleting" msprop:Generator_RowChangingName="StaffInfoRowChanging" msprop:Generator_RowEvHandlerName="StaffInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="StaffInfoRowDeleted" msprop:Generator_UserTableName="StaffInfo" msprop:Generator_RowChangedName="StaffInfoRowChanged" msprop:Generator_RowEvArgName="StaffInfoRowChangeEvent" msprop:Generator_RowClassName="StaffInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="First_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnFirst_Name" msprop:Generator_ColumnPropNameInRow="First_Name" msprop:Generator_ColumnPropNameInTable="First_NameColumn" msprop:Generator_UserColumnName="First Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Last_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnLast_Name" msprop:Generator_ColumnPropNameInRow="Last_Name" msprop:Generator_ColumnPropNameInTable="Last_NameColumn" msprop:Generator_UserColumnName="Last Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Service_x0020_1" msprop:Generator_ColumnVarNameInTable="columnService_1" msprop:Generator_ColumnPropNameInRow="Service_1" msprop:Generator_ColumnPropNameInTable="Service_1Column" msprop:Generator_UserColumnName="Service 1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Service_x0020_2" msprop:Generator_ColumnVarNameInTable="columnService_2" msprop:Generator_ColumnPropNameInRow="Service_2" msprop:Generator_ColumnPropNameInTable="Service_2Column" msprop:Generator_UserColumnName="Service 2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Service_x0020_3" msprop:Generator_ColumnVarNameInTable="columnService_3" msprop:Generator_ColumnPropNameInRow="Service_3" msprop:Generator_ColumnPropNameInTable="Service_3Column" msprop:Generator_UserColumnName="Service 3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Team" msprop:Generator_ColumnVarNameInTable="columnTeam" msprop:Generator_ColumnPropNameInRow="Team" msprop:Generator_ColumnPropNameInTable="TeamColumn" msprop:Generator_UserColumnName="Team" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Phone_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnPhone_Number" msprop:Generator_ColumnPropNameInRow="Phone_Number" msprop:Generator_ColumnPropNameInTable="Phone_NumberColumn" msprop:Generator_UserColumnName="Phone Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Service_x0020_4" msprop:Generator_ColumnVarNameInTable="columnService_4" msprop:Generator_ColumnPropNameInRow="Service_4" msprop:Generator_ColumnPropNameInTable="Service_4Column" msprop:Generator_UserColumnName="Service 4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Service_x0020_5" msprop:Generator_ColumnVarNameInTable="columnService_5" msprop:Generator_ColumnPropNameInRow="Service_5" msprop:Generator_ColumnPropNameInTable="Service_5Column" msprop:Generator_UserColumnName="Service 5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Service_x0020_6" msprop:Generator_ColumnVarNameInTable="columnService_6" msprop:Generator_ColumnPropNameInRow="Service_6" msprop:Generator_ColumnPropNameInTable="Service_6Column" msprop:Generator_UserColumnName="Service 6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
